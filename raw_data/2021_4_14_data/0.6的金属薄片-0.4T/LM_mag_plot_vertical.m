@@ -26,3 +26,6 @@ hold on;
 plot(xt3,yt3)
 legend('0T','0.28T','0.3T','0.4T'); %添加图例
 title('0.6薄片不同磁场下垂直方向应力形变关系')   %添加标题
+%设置横纵轴名称及字体大小
+xlabel('激光位移传感器数据/mm','FontSize',16);
+ylabel('力传感器Fz/N','FontSize',16);

@@ -21,4 +21,8 @@ for i = 1:l
     frame = getframe(fig); % 获取frame
     img = frame2im(frame); % 将frame变换成imwrite函数可以识别的格式
     imwrite(img,[path,namelist(i).name,'.png']); % 保存到工作目录下，名字为"namelist(i).name.png"
+    %设置横纵轴名称及字体大小
+    xlabel('激光位移传感器数据/mm','FontSize',16);
+    ylabel('力传感器Fz/N','FontSize',16);
+
 end
